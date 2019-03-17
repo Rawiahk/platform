@@ -1,0 +1,33 @@
+{
+  "name": "myprject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\"\"npm run client\""
+  },
+  "author": "rawiahk",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "crypto": "^1.0.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "express-session": "^1.15.6",
+    "file-system": "^2.2.2",
+    "form-data": "^2.3.3",
+    "joi": "^14.3.1",
+    "mongoose": "^5.4.19",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "parser": "^0.1.4",
+    "shortid": "^2.2.14",
+    "validator": "^10.11.0"
+  }
+}
